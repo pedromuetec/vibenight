@@ -1,0 +1,1442 @@
+/* =========================================
+   VIBE NIGHT
+   Identidade Visual
+   ========================================= */
+
+
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+
+    background: #000000;
+
+    color: #ffffff;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+header {
+    width: 100%;
+
+    background: #000000;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #b026ff;
+
+    box-shadow:
+        0 0 15px rgba(176, 38, 255, 0.4);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+/* LOGO */
+
+.logo a {
+    text-decoration: none;
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff1493,
+            #b026ff
+        );
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 20px rgba(255, 20, 147, 0.3);
+}
+
+
+/* =========================================
+   MENU
+   ========================================= */
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+nav a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff1493;
+
+    background: rgba(255, 20, 147, 0.08);
+
+    text-shadow:
+        0 0 10px #ff1493;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(176, 38, 255, 0.22),
+            transparent 40%
+        ),
+        #000000;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    left: 20%;
+
+    top: 20%;
+
+    background: #ff1493;
+
+    filter: blur(150px);
+
+    opacity: 0.18;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    right: 20%;
+
+    bottom: 10%;
+
+    background: #b026ff;
+
+    filter: blur(150px);
+
+    opacity: 0.18;
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+}
+
+.hero-subtitle {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #ff1493;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 6px;
+}
+
+.hero h1 {
+    font-size: 42px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    color: #ffffff;
+}
+
+.hero h1 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff1493,
+            #b026ff
+        );
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin-top: 25px;
+
+    color: #bbbbbb;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   BOTÕES
+   ========================================= */
+
+.btn {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 22px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff1493,
+            #b026ff
+        );
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 12px rgba(255, 20, 147, 0.35);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 15px #ff1493,
+        0 0 30px rgba(176, 38, 255, 0.6);
+}
+
+.hero-btn {
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   SEÇÃO DE EVENTOS
+   ========================================= */
+
+.eventos-section {
+    padding: 70px 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #000000,
+            #07000d
+        );
+}
+
+
+/* =========================================
+   TÍTULO DA SEÇÃO
+   ========================================= */
+
+.section-title {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+}
+
+.section-title span {
+    color: #ff1493;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+}
+
+.section-title h2 {
+    margin-top: 10px;
+
+    font-size: 34px;
+
+    font-weight: 800;
+}
+
+.section-title p {
+    margin-top: 10px;
+
+    color: #999999;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.container {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   CARD DE EVENTO
+   ========================================= */
+
+.evento-card {
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111116,
+            #050507
+        );
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    border: 1px solid #5c147d;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.evento-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff1493,
+            #b026ff
+        );
+}
+
+.evento-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    right: -50px;
+
+    bottom: -50px;
+
+    background: #b026ff;
+
+    filter: blur(70px);
+
+    opacity: 0.15;
+}
+
+.evento-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #b026ff;
+
+    box-shadow:
+        0 0 15px rgba(176, 38, 255, 0.4),
+        0 0 30px rgba(255, 20, 147, 0.15);
+}
+
+
+/* =========================================
+   CONTEÚDO DO CARD
+   ========================================= */
+
+.card-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+.card-label {
+    color: #ff1493;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.card h3 {
+    margin-top: 12px;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   INFORMAÇÕES DO EVENTO
+   ========================================= */
+
+.evento-info {
+    margin-top: 25px;
+
+    padding: 10px 0;
+
+    border-top: 1px solid #24242a;
+
+    border-bottom: 1px solid #24242a;
+}
+
+.evento-info p {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 15px 0;
+
+    color: #cccccc;
+
+    font-size: 14px;
+}
+
+.evento-info strong {
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+.evento-info p:first-child span {
+    color: #ff1493;
+
+    font-weight: 600;
+}
+
+.evento-info p:nth-child(2) span {
+    color: #d66eff;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   BOTÕES DO CARD
+   ========================================= */
+
+.card-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 5px;
+}
+
+.card-buttons .btn {
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   BOTÃO EXCLUIR
+   ========================================= */
+
+.btn.excluir {
+    background: transparent;
+
+    border: 1px solid #ff1493;
+
+    color: #ff1493;
+
+    box-shadow: none;
+}
+
+.btn.excluir:hover {
+    background: #ff1493;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 0 12px #ff1493,
+        0 0 25px rgba(255, 20, 147, 0.5);
+}
+
+
+/* =========================================
+   CADASTRO DE EVENTO
+   ========================================= */
+
+.cadastro-section {
+    padding: 60px 20px;
+
+    min-height: 70vh;
+
+    background:
+        linear-gradient(
+            180deg,
+            #000000,
+            #07000d
+        );
+}
+
+.form-container {
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    background: #0b0b0f;
+
+    border: 1px solid #5c147d;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 20px rgba(176, 38, 255, 0.15);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 12px;
+
+    background: #050507;
+
+    color: #ffffff;
+
+    border: 1px solid #5c147d;
+
+    border-radius: 8px;
+
+    font-family: 'Poppins', sans-serif;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #ff1493;
+
+    box-shadow:
+        0 0 10px rgba(255, 20, 147, 0.3);
+}
+
+.form-group select option {
+    background: #050507;
+
+    color: #ffffff;
+}
+
+.form-container .btn {
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   INPUTS
+   ========================================= */
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+    background: #0b0b0f;
+
+    color: #ffffff;
+
+    border: 1px solid #5c147d;
+
+    border-radius: 8px;
+
+    font-family: 'Poppins', sans-serif;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff1493;
+
+    box-shadow:
+        0 0 10px rgba(255, 20, 147, 0.35);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background: #000000;
+
+    color: #888888;
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    border-top: 1px solid #222222;
+}
+
+footer strong {
+    color: #ff1493;
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        padding: 20px 50px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 64px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .eventos-section {
+        padding: 90px 40px;
+    }
+
+    .cadastro-section {
+        padding: 90px 40px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================================
+   TELAS GRANDES
+   ========================================= */
+
+@media (min-width: 1100px) {
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+/* =========================================
+   LOGIN
+   ========================================= */
+
+.login-section {
+    min-height: 75vh;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #000000,
+            #07000d
+        );
+}
+
+.login-section .form-container {
+    max-width: 500px;
+}
+
+.login-cadastro {
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #999999;
+
+    font-size: 14px;
+}
+
+.login-cadastro a {
+    color: #ff1493;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.login-cadastro a:hover {
+    color: #b026ff;
+}
+
+.mensagem-erro {
+    margin-bottom: 20px;
+
+    padding: 12px;
+
+    background: rgba(255, 20, 147, 0.1);
+
+    border: 1px solid #ff1493;
+
+    border-radius: 8px;
+
+    color: #ff1493;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   USUÁRIO LOGADO
+   ========================================= */
+
+.usuario-logado {
+    color: #d66eff;
+
+    font-size: 14px;
+
+    margin: 0 5px;
+}
+/* =========================================
+   EXPERIÊNCIA - SOBRE
+========================================= */
+
+.experiencia-secao {
+    padding: 70px 20px;
+    background: #050505;
+}
+
+.experiencia-secao > .sobre-titulo {
+    max-width: 800px;
+    margin: 0 auto 45px;
+}
+
+.experiencia-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    gap: 25px;
+}
+
+.experiencia-card {
+    background: #101010;
+    border-radius: 15px;
+    overflow: hidden;
+
+    border: 1px solid #292929;
+
+    transition: 0.3s;
+}
+
+.experiencia-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #FF1493;
+
+    box-shadow:
+        0 0 25px rgba(255, 20, 147, 0.25);
+}
+
+.experiencia-imagem {
+    height: 220px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.experiencia-conteudo {
+    padding: 25px;
+}
+
+.experiencia-conteudo > span {
+    color: #FF1493;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.experiencia-conteudo h3 {
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+.experiencia-conteudo p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+
+/* MANIFESTO */
+
+.manifesto-secao {
+    padding: 100px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(176, 38, 255, 0.18),
+            transparent 60%
+        );
+
+    text-align: center;
+}
+
+.manifesto {
+    max-width: 850px;
+    margin: auto;
+}
+
+.manifesto > span {
+    color: #FF1493;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.manifesto h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.manifesto h2 strong {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            #FF1493,
+            #B026FF
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.manifesto p {
+    color: #bbb;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* IMAGENS DOS ESPAÇOS */
+
+.pista {
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.15),
+            rgba(0,0,0,.5)
+        ),
+        url("../imagens/pista.jpg");
+}
+
+.vip {
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.15),
+            rgba(0,0,0,.5)
+        ),
+        url("../imagens/vip.jpg");
+}
+
+.camarote {
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.15),
+            rgba(0,0,0,.5)
+        ),
+        url("../imagens/camarote.jpg");
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+    .experiencia-secao {
+        padding: 100px 40px;
+    }
+
+    .experiencia-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .manifesto h2 {
+        font-size: 52px;
+    }
+
+}
+/* =========================================
+   SOBRE - HERO
+========================================= */
+
+.sobre-hero {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #000000;
+}
+
+.sobre-hero-imagem {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.sobre-hero-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.sobre-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.3),
+            #000000
+        ),
+        radial-gradient(
+            circle at center,
+            rgba(176, 38, 255, 0.25),
+            transparent 60%
+        );
+    z-index: 2;
+}
+
+.sobre-hero-conteudo {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.sobre-label {
+    display: block;
+    margin-bottom: 20px;
+    color: #ff1493;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 6px;
+}
+
+.sobre-hero-conteudo h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.sobre-hero-conteudo h1 span {
+    display: block;
+    background:
+        linear-gradient(
+            90deg,
+            #ff1493,
+            #b026ff
+        );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sobre-hero-conteudo p {
+    margin-top: 25px;
+    color: #bbbbbb;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   SOBRE - SEÇÕES GERAIS / TÍTULO
+========================================= */
+
+.sobre-secao {
+    padding: 70px 20px;
+    background:
+        linear-gradient(
+            180deg,
+            #000000,
+            #07000d
+        );
+}
+
+.sobre-titulo {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.sobre-titulo span {
+    color: #ff1493;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.sobre-titulo h2 {
+    margin-top: 10px;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.sobre-titulo p {
+    margin-top: 10px;
+    color: #999999;
+    font-size: 15px;
+}
+
+.sobre-texto {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #bbbbbb;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.sobre-texto p {
+    margin-bottom: 18px;
+}
+
+.sobre-texto strong {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   IDENTIDADE
+========================================= */
+
+.identidade-secao {
+    padding: 70px 20px;
+    background: #050505;
+}
+
+.identidade-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 25px;
+}
+
+.identidade-card {
+    background:
+        linear-gradient(
+            145deg,
+            #111116,
+            #050507
+        );
+    border: 1px solid #292929;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.identidade-card:hover {
+    transform: translateY(-7px);
+    border-color: #b026ff;
+    box-shadow:
+        0 0 15px rgba(176, 38, 255, 0.4),
+        0 0 30px rgba(255, 20, 147, 0.15);
+}
+
+.identidade-icone {
+    font-size: 30px;
+    margin-bottom: 15px;
+    background:
+        linear-gradient(
+            90deg,
+            #ff1493,
+            #b026ff
+        );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.identidade-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.identidade-card p {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   EMPRESA / INFORMAÇÕES
+========================================= */
+
+.empresa-secao {
+    padding: 70px 20px;
+    text-align: center;
+    background:
+        linear-gradient(
+            180deg,
+            #07000d,
+            #000000
+        );
+}
+
+.empresa-info p {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.empresa-info strong {
+    color: #ff1493;
+    font-size: 18px;
+}
+
+
+/* =========================================
+   REDES SOCIAIS
+========================================= */
+
+.redes-secao {
+    padding: 70px 20px 90px;
+    background: #050505;
+}
+
+.redes-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+
+.rede-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    background:
+        linear-gradient(
+            145deg,
+            #111116,
+            #050507
+        );
+    border: 1px solid #292929;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.rede-card span {
+    color: #d66eff;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.rede-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff1493;
+    box-shadow:
+        0 0 15px rgba(255, 20, 147, 0.35);
+}
+
+
+/* =========================================
+   SOBRE - DESKTOP
+========================================= */
+
+@media (min-width: 768px) {
+
+    .sobre-hero {
+        min-height: 480px;
+    }
+
+    .sobre-hero-conteudo h1 {
+        font-size: 56px;
+    }
+
+    .sobre-hero-conteudo p {
+        font-size: 18px;
+    }
+
+    .sobre-secao,
+    .identidade-secao,
+    .empresa-secao,
+    .redes-secao {
+        padding: 100px 40px;
+    }
+
+    .identidade-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .redes-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   RECLAMAÇÕES
+   ========================================= */
+
+.mensagem-sucesso {
+    margin-bottom: 20px;
+
+    padding: 12px;
+
+    background: rgba(176, 38, 255, 0.1);
+
+    border: 1px solid #b026ff;
+
+    border-radius: 8px;
+
+    color: #d66eff;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    background: #050507;
+
+    color: #ffffff;
+
+    border: 1px solid #5c147d;
+
+    border-radius: 8px;
+
+    font-family: 'Poppins', sans-serif;
+
+    outline: none;
+
+    resize: vertical;
+}
+
+.form-group textarea:focus {
+    border-color: #ff1493;
+
+    box-shadow:
+        0 0 10px rgba(255, 20, 147, 0.3);
+}
+
+.reclamacao-item {
+    padding: 15px 0;
+
+    border-bottom: 1px solid #24242a;
+}
+
+.reclamacao-item:last-child {
+    border-bottom: none;
+}
+
+.reclamacao-item p {
+    color: #ccc;
+
+    line-height: 1.6;
+}
+
+.reclamacao-data {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #666;
+
+    font-size: 12px;
+}
